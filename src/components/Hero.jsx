@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 
 import { ComputersCanvas } from "./canvas";
-import Typical from "react-typical";
+import TypewriterComponent from "./Typeeffect";
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto  ">
@@ -18,20 +18,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText}`}>
             {" "}
             <span className="text-[#915eff]">
-              <Typical
-                steps={[
-                  "Hey Guys,",
-                  600,
-                  " I'm Usama Bhatti",
-                  500,
-                  "I'm a,",
-                  500,
-                  "Fullstack web devaloper",
-                  500,
-                ]}
-                loop={Infinity}
-                // wrapper="p"
-              />
+              <TypewriterComponent/>
             </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
